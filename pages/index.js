@@ -1,8 +1,22 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="container">
+    <div>
+
+      <p>This is a web page to buy tickets of your favorites movies</p>
+
+      <Link href="movies">
+        <a>Got to buy tickets</a>
+      </Link>
+
+    </div>
+  )
+}
+
+
+{/* <div className="container">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -204,6 +218,4 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
-  )
-}
+    </div> */}
